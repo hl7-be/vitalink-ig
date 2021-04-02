@@ -1,0 +1,338 @@
+
+:root {
+
+  --ig-status-text-color: #ffefef; /* 1. IG Title and status text color */
+  --navbar-bg-color: #206030; /* 2. Header container color */
+  --footer-bg-color: #666e68; /* 3. Footer background color*/
+  --footer-container-color: #104020; /* 4. Footer container color */
+  --stripe-bg-color: #508080; /* 5. Header strip color */
+
+  --btn-hover-color: #26969c;  /* 6. Menu button hover color */
+  --btn-active-color: #2baab2; /* 7. Menu button active color */
+  --btn-text-color: #ffeeee; /* 8. Menu button text color */
+  --btn-gradient-start-color: #33aa77; /* 9. Menu item gradient start color */
+  --btn-gradient-end-color: #209966; /* 10. Menu item gradient end  color */
+  --btn-gradient-start-color-alpha: #ff33aa77; /* 11. Menu item gradient start color (with alpha) */
+  --btn-gradient-end-color-alpha: #ff209966; /* 12. Menu item gradient end color (with alpha) */
+  --link-color: #208050; /* 13. Hyperlink text color */
+  --link-hover-color: #109030; /* 14. Hyperlink text hover color */
+
+  --toc-box-bg-color: #ddeeff; /* 17.  TOC box background color */
+  --toc-box-border: 1px solid green; /* 18. TOC box border definition */
+ 
+  --header-bg-color: #1c70b7;
+
+/*
+  --main-bg-color: #1c7074;
+  --btn-gradient-start-color: #428bca;
+  --btn-gradient-end-color: #357ebd;
+  --btn-gradient-start-color-alpha: #ff428bca;
+  --btn-gradient-end-color-alpha: #ff357ebd;
+  --link-color: #203060;
+  --link-hover-color: #2a6a3a;
+*/
+  --publish-box-bg-color: #DDAAFF; /* var(--publish-box-bg-color); */
+  --publish-box-border: 1px solid #0A0008; /* var(--publish-box-border); */
+  --stu-note-background-color: #f2f2ff;  /* var(--stu-note-background-color); */
+  --stu-note-border-left-color: #a0a0ff; /* var(stu-note-border-left-color); */
+
+}
+
+
+#segment-header {
+    background-color: var(--header-bg-color);
+    background-image: url(../images/zegnew.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#segment-header > .container {
+    background-color: var(--header-bg-color);
+    opacity: 0.8;    
+}
+
+.breadcrumb {
+}
+/*
+#stripe {
+    background: var(--stripe-bg-color);
+}
+
+#stripe {
+    background: var(--stripe-bg-color);
+}
+*/
+#segment-footer {
+    margin-top: 27px;
+	background-color: var(--stripe-bg-color);
+}
+#segment-footer > .container {
+  background-color: var(--main-bg-color);
+  color: #ffffff;
+}
+
+
+.navbar-inverse {
+  background-color: var(--main-bg-color);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    padding: 10px 12px;
+    background-color: var(--btn-hover-color);
+/*    background-color: #3a3c3c; */
+    border-color: #2e2f2f;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+#content > .inner-wrapper,
+.container > .row > .inner-wrapper {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+#hl7-nav {
+  line-height: 50px;
+  float: left;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  color: #808080;
+}
+#hl7-nav a {
+  color: inherit;
+}
+#hl7-logo {
+  float: left;
+  margin-left: 6px;
+}
+
+
+#family-nav {
+    line-height: 50px;
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #808080;
+}
+
+
+#project-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #808080;
+}
+#project-logo {
+  float: left;
+  margin-left: 3px;
+}
+#hl7-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 16px;
+  color: #400080;
+}
+#hl7-search a {
+  color: inherit;
+}
+#fhir-nav {
+  line-height: 50px;
+  float: right;
+  margin-top: 16px;
+  color: #808080;
+}
+#fhir-logo {
+  float: right;
+  margin-left: 6px;
+}
+#hl7-status {
+  line-height: 20px;
+  margin-top: 26px;
+  color: #300060;
+  text-align: center;
+  height: 60px;
+}
+
+#ig-status {
+  line-height: 20px;
+  margin-top: 17px;
+  color: #1E0A37;
+  text-align: center;
+  height: 50px;
+}
+#stripe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+}
+
+#notes a {
+  color: #555555;
+}
+#publish-box {
+  background-color: var(--publish-box-bg-color);
+  border: var(--publish-box-border);
+  padding: 5px;
+}
+
+.navbar .nav > li > a {
+  padding: 10px 12px;
+  text-shadow: none;
+}
+
+
+.note-to-balloters::before {
+  white-space: pre;
+  content: "Note To Balloters\A ";
+  #background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+.note-to-balloters, .stu-note{
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+    background-color: var(--stu-note-background-color);
+    border-left-color: var(stu-note-border-left-color);
+}
+
+.stu-note::before {
+  white-space: pre;
+  content: "Note\A ";
+  #background-color: yellow;
+  color: red;
+  font-weight: bold;}
+
+#segment-footer > .container .inner-wrapper {
+    padding: 7px 15px;
+}
+
+.btn-default.active {
+  background-color:  var(--btn-active-color);
+  border-color: #2e2f2f;
+}
+
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: var(--btn-active-color);
+  color: #000000;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: var(--btn-active-color);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fdfdf7;
+}
+
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--btn-active-color);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(var(--btn-gradient-start-color)), to(var(--btn-gradient-end-color)));
+  background-image: -webkit-linear-gradient(top, var(--btn-gradient-start-color), 0%, var(--btn-gradient-end-color), 100%);
+  background-image: -moz-linear-gradient(top, var(--btn-gradient-start-color) 0%, var(--btn-gradient-end-color) 100%);
+  background-image: linear-gradient(to bottom, var(--btn-gradient-start-color) 0%, var(--btn-gradient-end-color) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--btn-gradient-start-color-alpha), endColorstr=var(--btn-gradient-end-color-alpha), GradientType=0);
+}
+
+
+.dropdown-toggle > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: var(--btn-active-color);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(var(--btn-gradient-start-color)), to(var(--btn-gradient-end-color)));
+  background-image: -webkit-linear-gradient(top, var(--btn-gradient-start-color), 0%, var(--btn-gradient-start-color), 100%);
+  background-image: -moz-linear-gradient(top, var(--btn-gradient-start-color) 0%, var(--btn-gradient-end-color) 100%);
+  background-image: linear-gradient(to bottom, var(--btn-gradient-start-color) 0%, var(--btn-gradient-end-color) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--btn-gradient-start-color-alpha), endColorstr=var(--btn-gradient-end-color-alpha), GradientType=0);
+}
+
+
+
+
+
+
+
+body {
+  color: #222222;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.text-primary {
+  color: var(--btn-text-color);
+}
+
+.btn-link {
+  color: var(--btn-text-color);
+}
+
+.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: var(--btn-hover-color);
+}
+
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: var(--btn-active-color);
+
+}
+
+.navbar {
+  background-color: var(--main-bg-color);
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+  color: var(--btn-active-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+
+
+/*.page-header h1 {
+  color: var(--btn-active-color);
+}
+/

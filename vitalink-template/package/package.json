@@ -1,0 +1,12 @@
+{
+  "name": "vitalink.fhir.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Dedicated local template for Vitalink project",
+  "author": "http://hl7belgium.org",
+	"base":  "hl7.be.fhir.template",
+  "dependencies": {
+    "hl7.be.fhir.template": "current"
+  }
+}
